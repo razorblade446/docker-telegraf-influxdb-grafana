@@ -11,9 +11,9 @@ services:
       - "22022:22"
       - "8125:8125/udp"
     volumes:
-      - /volume1/docker/influxdb:/var/lib/influxdb
-      - /volume1/docker/grafana:/var/lib/grafana
-      - /volume1/docker/backups:/var/backups
+      - /volume2/docker/monitoring/influxdb:/var/lib/influxdb
+      - /volume2/docker/monitoring/grafana:/var/lib/grafana
+      - /volume2/docker/monitoring/backups:/var/backups
 
 
 #test:
